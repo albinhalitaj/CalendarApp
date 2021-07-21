@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.WelcomeActivity"
+    android:gravity="center_horizontal"
+    android:background="@mipmap/welcome">
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/login"
+        android:id="@+id/loginBtn"
+        android:layout_marginTop="570dp"
+        android:text="@string/login"
+        android:textColor="@color/blue">
+    </Button>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/register"
+        android:layout_marginTop="10dp"
+        android:id="@+id/registerBtn"
+        android:text="@string/sign_up"
+        android:textColor="@color/white">
+    </Button>
+
+
+</LinearLayout>
