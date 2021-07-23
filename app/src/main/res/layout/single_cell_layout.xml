@@ -2,14 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="60dp"
+    android:layout_height="55dp"
     android:padding="8dp">
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/calendar_day"
-        android:text="1"
+        android:text="@string/_1"
         android:textStyle="bold"
         android:layout_gravity="center"
         android:textSize="20sp">
@@ -21,7 +22,8 @@
         android:src="@drawable/event_indicator"
         android:layout_gravity="center"
         android:id="@+id/events_id"
-        android:visibility="gone">
+        android:visibility="gone"
+        android:contentDescription="@string/event_indicator">
     </ImageView>
 
 </LinearLayout>

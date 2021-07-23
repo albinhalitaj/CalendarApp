@@ -10,8 +10,9 @@
         android:layout_height="50dp"
         android:background="@drawable/secondary_input"
         android:id="@+id/eventname"
-        android:hint="Event Title"
+        android:hint="@string/event_title"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
         android:inputType="textShortMessage"
         android:layout_margin="20dp"
         android:gravity="center">
@@ -25,12 +26,13 @@
             android:layout_height="40dp"
             android:background="@mipmap/time_64px"
             android:layout_margin="10dp"
-            android:id="@+id/seteventtime">
+            android:id="@+id/seteventtime"
+            android:contentDescription="@string/clock">
         </ImageButton>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="00:00 AM"
+            android:text="@string/_00_00_am"
             android:gravity="center"
             android:textSize="30sp"
             android:textColor="@android:color/white"
@@ -44,7 +46,7 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Turn Notifications On"
+        android:text="@string/turn_notifications_on"
         android:textColor="@android:color/white"
         android:buttonTint="@android:color/white"
         android:layout_gravity="center"
@@ -54,7 +56,7 @@
     <Button
         android:layout_width="130dp"
         android:layout_height="45dp"
-        android:text="Add Event"
+        android:text="@string/add_event"
         android:layout_gravity="center"
         android:layout_margin="10dp"
         android:textAllCaps="false"

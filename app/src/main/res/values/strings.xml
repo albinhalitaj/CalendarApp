@@ -7,4 +7,11 @@
     <string name="email">Email</string>
     <string name="create_account">Create Account</string>
     <string name="data_aktuale">Data Aktuale</string>
+    <string name="event_title">Event Title</string>
+    <string name="_00_00_am">00:00 AM</string>
+    <string name="turn_notifications_on">Turn Notifications On</string>
+    <string name="add_event">Add Event</string>
+    <string name="_1">1</string>
+    <string name="event_indicator">Event Indicator</string>
+    <string name="clock">Clock</string>
 </resources>

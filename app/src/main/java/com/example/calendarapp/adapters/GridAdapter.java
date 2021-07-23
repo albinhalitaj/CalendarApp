@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 
 import com.example.calendarapp.R;
 import com.example.calendarapp.models.Events;
@@ -78,10 +79,17 @@ public class GridAdapter extends ArrayAdapter {
         dayNumber.setText(String.valueOf(dayNo));
 
         if(displayMonth == currentMonth && displayYear == currentYear){
-            dayNumber.setTextColor(getContext().getResources().getColor(R.color.blue));
+            dayNumber.setTextColor(ContextCompat.getColor(getContext(),R.color.blue));
         }
         else {
             dayNumber.setTextColor(Color.parseColor("#cccccc"));
+        }
+
+        int todaysDay = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
+        if (Integer.parseInt(dayNumber.getText().toString()) == todaysDay){
+            dayNumber.setBackground(ContextCompat.getDrawable(getContext(),R.drawable.filled_circle));
+            dayNumber.setTextColor(Color.WHITE);
+            dayNumber.setTextSize(13);
         }
 
         Calendar eventCalendar = Calendar.getInstance();

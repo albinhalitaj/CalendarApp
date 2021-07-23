@@ -2,6 +2,8 @@ package com.example.calendarapp.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import com.example.calendarapp.R;
@@ -15,6 +17,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        customCalendarView = findViewById(R.id.custom_calendar_view);
+        SharedPreferences sharedPreferences = getSharedPreferences(LoginActivity.PREFS_NAME,0);
+        boolean isLoggedIn = sharedPreferences.getBoolean("isLoggedIn",false);
+        if (isLoggedIn){
+            customCalendarView = findViewById(R.id.custom_calendar_view);
+        }
+        else
+        {
+            startActivity(new Intent(MainActivity.this,WelcomeActivity.class));
+            finish();
+        }
     }
 }
