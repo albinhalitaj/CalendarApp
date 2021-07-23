@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/eventview">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/secondary_input"
+        android:id="@+id/eventname"
+        android:hint="Event Title"
+        android:textColorHint="@color/white"
+        android:inputType="textShortMessage"
+        android:layout_margin="20dp"
+        android:gravity="center">
+    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/time_64px"
+            android:layout_margin="10dp"
+            android:id="@+id/seteventtime">
+        </ImageButton>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00:00 AM"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:id="@+id/eventtime"
+            android:layout_margin="10dp">
+        </TextView>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn Notifications On"
+        android:textColor="@android:color/white"
+        android:buttonTint="@android:color/white"
+        android:layout_gravity="center"
+        android:id="@+id/alarme">
+    </CheckBox>
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:text="Add Event"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:background="@drawable/secondarybutton"
+        android:id="@+id/addevent">
+    </Button>
+
+</LinearLayout>

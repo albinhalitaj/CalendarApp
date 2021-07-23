@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/circle"
+            android:id="@+id/circle">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="August"
+            android:id="@+id/month"
+            android:textSize="15dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="80dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/date"
+            android:text="10"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/blue">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:id="@+id/day"
+            android:text="Mon"
+            android:textSize="12dp"
+            android:layout_marginLeft="15dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/eventview"
+            android:layout_below="@id/day"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/eventname"
+            android:text="    Mbrojtja detyres"
+            android:textColor="@color/white">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12:00 PM"
+            android:id="@+id/time"
+            android:layout_marginTop="85dp"
+            android:layout_marginLeft="92dp"
+            android:textColor="@color/white"
+            android:textSize="12dp">
+        </TextView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
