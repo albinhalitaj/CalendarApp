@@ -52,7 +52,6 @@
     <li><a href="#contributing">Kontribo</a></li>
     <li><a href="#license">Liçensa</a></li>
     <li><a href="#contact">Kontakti</a></li>
-    <li><a href="#acknowledgements">Mirënjohje</a></li>
   </ol>
 </details>
 
@@ -60,7 +59,11 @@
 <!-- ABOUT THE PROJECT -->
 ## Rreth Projektit
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Welcome Page][welcome]]
+[![Sign Up][sign_up]]
+[![Sign In][sign_in]]
+[![Main Page][main]]
+[![Add Event][add_event]]
 
 There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
@@ -142,24 +145,10 @@ Shpërndarë sipas licencës Riinvest. Shikoni `LICENCA` për më shumë informa
 ## Kontakti
 
 Albin Halitaj - [@albinhalitaj](https://twitter.com/albinhalitaj) - albin.halitaj@gmail.com
+Endrit Hyseni
+Fatlind Bytyqi
 
 Linku i projektit: [https://github.com/albinhalitaj/CalendarApp](https://github.com/albinhalitaj/CalendarApp)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Mirënjohje
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
 
 
 
@@ -179,4 +168,8 @@ Linku i projektit: [https://github.com/albinhalitaj/CalendarApp](https://github.
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[welcome]: https://prnt.sc/1fuj7rd
+[main]: https://prnt.sc/1fuk1jd
+[sign_in]: https://prnt.sc/1fujj7h
+[sign_up]: https://prnt.sc/1fujed5
+[add_event]: https://prnt.sc/1fuk8ep
