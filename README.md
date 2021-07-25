@@ -59,10 +59,8 @@
 ## Rreth Projektit
 
 [![Welcome Page][welcome]]
-[![Sign Up][sign_up]]
 [![Sign In][sign_in]]
 [![Main Page][main]]
-[![Add Event][add_event]]
 
 Calendar App është një aplikacion i cili ka për qëllim që ta lehtësojë përdoruesit të këtij aplikacioni menaxhimin me evente apo ngjarje të jetës
 së përditëshme, me një UI shumë fleksibil dhe user-friendly e bënë këtë aplikacion shumë të lehtë për përdorim.
@@ -134,6 +132,7 @@ Shpërndarë sipas licencës Riinvest. Shikoni `LICENCA` për më shumë informa
 Albin Halitaj - [@albinhalitaj](https://twitter.com/albinhalitaj) - albin.halitaj@gmail.com
 
 Endrit Hyseni
+
 Fatlind Bytyqi
 
 Linku i projektit: [https://github.com/albinhalitaj/CalendarApp](https://github.com/albinhalitaj/CalendarApp)
@@ -153,7 +152,7 @@ Linku i projektit: [https://github.com/albinhalitaj/CalendarApp](https://github.
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
 [issues-url]: https://github.com/albinhalitaj/CalendarApp/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/albinhalitaj/CalendarApp/images/LICENSE.txt
+[license-url]: https://github.com/albinhalitaj/CalendarApp/images/license.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/albinhalitaj
 [welcome]: images/welcome.png
