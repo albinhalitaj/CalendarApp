@@ -86,7 +86,8 @@ public class GridAdapter extends ArrayAdapter {
         }
 
         int todaysDay = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
-        if (Integer.parseInt(dayNumber.getText().toString()) == todaysDay){
+        int month = Calendar.getInstance().get(Calendar.MONTH);
+        if (Integer.parseInt(dayNumber.getText().toString()) == todaysDay && month == displayMonth - 1){
             dayNumber.setBackground(ContextCompat.getDrawable(getContext(),R.drawable.filled_circle));
             dayNumber.setTextColor(Color.WHITE);
             dayNumber.setTextSize(13);

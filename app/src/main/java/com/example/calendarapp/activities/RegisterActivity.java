@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -49,7 +51,7 @@ public class RegisterActivity extends AppCompatActivity {
         String username = this.username.getText().toString().trim();
         String password = this.password.getText().toString().trim();
         String email = this.email.getText().toString().trim();
-        Boolean status = false;
+        boolean status = false;
 
         if (username.isEmpty() || password.isEmpty() || email.isEmpty()){
             Toast.makeText(this,"Please fill all the fields!",Toast.LENGTH_SHORT).show();
@@ -59,13 +61,23 @@ public class RegisterActivity extends AppCompatActivity {
                 Toast.makeText(this,"Username Already Exists!",Toast.LENGTH_SHORT).show();
                 status = false;
             }else{
-                Boolean result = dbOpenHelper.insertUser(username,password,email);
-                if (result){
-                    Toast.makeText(this,"Register Success!",Toast.LENGTH_SHORT).show();
-                    status = true;
+                if (!isValidEmail(email)){
+                    Toast.makeText(this,"Please provide a valid Email!",Toast.LENGTH_SHORT).show();
+                    status = false;
+                }
+                else{
+                    Boolean result = dbOpenHelper.insertUser(username,password,email);
+                    if (result){
+                        Toast.makeText(this,"Register Success!",Toast.LENGTH_SHORT).show();
+                        status = true;
+                    }
                 }
             }
         }
         return status;
+    }
+
+    public static boolean isValidEmail(CharSequence target) {
+        return (!TextUtils.isEmpty(target) && Patterns.EMAIL_ADDRESS.matcher(target).matches());
     }
 }
