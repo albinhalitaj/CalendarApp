@@ -59,7 +59,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Rreth Projektit
 
-[![Welcome Page][welcome]]
+[![Product Name Screen Shot][welcome]](https://example.com)
 [![Sign Up][sign_up]]
 [![Sign In][sign_in]]
 [![Main Page][main]]
@@ -168,7 +168,7 @@ Linku i projektit: [https://github.com/albinhalitaj/CalendarApp](https://github.
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[welcome]: https://prnt.sc/1fuj7rd
+[welcome]: images/welcome.png
 [main]: https://prnt.sc/1fuk1jd
 [sign_in]: https://prnt.sc/1fujj7h
 [sign_up]: https://prnt.sc/1fujed5
