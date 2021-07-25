@@ -1,4 +1,4 @@
-# CalendarApp
+# Calendar App
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
