@@ -154,7 +154,7 @@ Linku i projektit: [https://github.com/albinhalitaj/CalendarApp](https://github.
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/albinhalitaj/CalendarApp/images/license.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/albinhalitaj
+[linkedin-url]: https://linkedin.com/in/albin-halitaj/
 [welcome]: images/welcome.png
 [main]: images/main.png
 [sign_in]: images/login.png
