@@ -10,55 +10,55 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/albinhalitaj/CalendarApp">
     <img src="https://cdn.peppix.nl/data/2021/01/google-agenda-3.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Android Calendar App</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Nje aplikacion për menaxhimin dhe kontrollimin e ngjarjeve kohës dhe planifikimin e kalendarit tuaj.
     <br />
-    <a href="https://github.com/albinhalitaj/CalendarApp"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/albinhalitaj/CalendarApp"><strong>Eksploro dokumentin »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/albinhalitaj/CalendarApp">View Demo</a>
+    <a href="https://github.com/albinhalitaj/CalendarApp">Shiko Demon</a>
     ·
-    <a href="https://github.com/albinhalitaj/CalendarApp/issues">Report Bug</a>
+    <a href="https://github.com/albinhalitaj/CalendarApp/issues">Raporto Gabime</a>
     ·
-    <a href="https://github.com/albinhalitaj/CalendarApp/issues">Request Feature</a>
+    <a href="https://github.com/albinhalitaj/CalendarApp/issues">Kërko funksion</a>
   </p>
 </p>
 
 
 <details open="open">
-  <summary>Table of Contents</summary>
+  <summary>Përmbajtja</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project">Rreth Projektit</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Ndërtuar me</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started">Fillimi</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#prerequisites">Parakushtet</a></li>
+        <li><a href="#installation">Instalimi</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li><a href="#usage">Përdorimi</a></li>
+    <li><a href="#roadmap">Udhërrëfyesi</a></li>
+    <li><a href="#contributing">Kontribo</a></li>
+    <li><a href="#license">Liçensa</a></li>
+    <li><a href="#contact">Kontakti</a></li>
+    <li><a href="#acknowledgements">Mirënjohje</a></li>
   </ol>
 </details>
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Rreth Projektit
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
@@ -73,20 +73,19 @@ Of course, no one template will serve all projects since your needs may be diffe
 
 A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
-### Built With
+### Ndërtuar me
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Java](https://getbootstrap.com)
-* [Android Studio](https://jquery.com)
+* [Java](https://www.java.com/en/)
+* [Android Studio](https://developer.android.com/studio)
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Fillimi
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Për të ekzekutuar një kopje lokale, ndiqni këto shembuj të thjeshtë.
 
-### Prerequisites
+### Parakushtet
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
@@ -94,26 +93,19 @@ This is an example of how to list things you need to use the software and how to
   npm install npm@latest -g
   ```
 
-### Installation
+### Instalimi
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Klononi repon
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/albinhalitaj/CalendarApp.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
-   ```
+2. Hapeni projektin me Android Studio 
+3. Egzektoni duke klikuar mbi butonin Play
 
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Përdorimi
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
@@ -122,43 +114,41 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 <!-- ROADMAP -->
-## Roadmap
+## Udhërrëfyesi
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
+Shikoni [çështje të hapura](https://github.com/albinhalitaj/CalendarApp/issues) për një listë të tipareve të propozuara (dhe çështjet e njohura).
 
 
 <!-- CONTRIBUTING -->
-## Contributing
+## Kontribo
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Kontributet janë ato që e bëjnë komunitetin me burim të hapur një vend kaq të mahnitshëm për të mësuar, frymëzuar dhe krijuar. Çdo kontribut që ju jepni ** vlerësohet shumë **.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Bëjeni Fork Projektin
+2. Krijoni Degën tuaj të Veçorive (`git checkout -b feature / AmazingFeature`)
+3. Bëni Ndryshimet tuaja (`git commit -m 'Add some AmazingFeature')
+4. Bëjeni Push në Degën Tuaj (`tipari i origjinës së git push / Karakteristikë e Mrekullueshme`)
+5. Bëjeni një Kërkesë për Pull
 
 
 
 <!-- LICENSE -->
-## License
+## Liçensa
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
+Shpërndarë sipas licencës Riinvest. Shikoni `LICENCA` për më shumë informacione.
 
 
 <!-- CONTACT -->
-## Contact
+## Kontakti
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Albin Halitaj - [@albinhalitaj](https://twitter.com/albinhalitaj) - albin.halitaj@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Linku i projektit: [https://github.com/albinhalitaj/CalendarApp](https://github.com/albinhalitaj/CalendarApp)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
+## Mirënjohje
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
