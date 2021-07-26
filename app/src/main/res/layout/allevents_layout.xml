@@ -13,16 +13,17 @@
             android:layout_height="55dp"
             android:layout_marginTop="10dp"
             android:src="@drawable/circle"
-            android:id="@+id/circle">
+            android:id="@+id/circle"
+            android:contentDescription="@string/circle">
         </ImageView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="August"
+            android:text="@string/august"
             android:id="@+id/month"
-            android:textSize="15dp"
-            android:layout_marginLeft="75dp"
+            android:textSize="15sp"
+            android:layout_marginStart="75dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="80dp">
         </TextView>
@@ -30,10 +31,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
             android:id="@+id/date"
-            android:text="10"
-            android:textSize="20dp"
+            android:text="@string/_10"
+            android:textSize="20sp"
             android:layout_marginTop="15dp"
             android:textColor="@color/blue">
         </TextView>
@@ -43,9 +44,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:id="@+id/day"
-            android:text="Mon"
-            android:textSize="12dp"
-            android:layout_marginLeft="15dp">
+            android:text="@string/mon"
+            android:textSize="12sp"
+            android:layout_marginStart="15dp">
         </TextView>
 
         <TextView
@@ -53,23 +54,23 @@
             android:layout_height="60dp"
             android:background="@drawable/eventview"
             android:layout_below="@id/day"
-            android:layout_marginLeft="70dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="20dp"
             android:layout_marginTop="50dp"
             android:id="@+id/eventname"
-            android:text="    Mbrojtja detyres"
+            android:text="@string/mbrojtja_detyres"
             android:textColor="@color/white">
         </TextView>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="12:00 PM"
+            android:text="@string/_12_00_pm"
             android:id="@+id/time"
             android:layout_marginTop="85dp"
-            android:layout_marginLeft="92dp"
+            android:layout_marginStart="92dp"
             android:textColor="@color/white"
-            android:textSize="12dp">
+            android:textSize="12sp">
         </TextView>
 
     </com.google.android.material.card.MaterialCardView>

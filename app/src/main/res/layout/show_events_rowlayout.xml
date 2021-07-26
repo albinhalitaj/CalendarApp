@@ -24,8 +24,8 @@
                 android:textColor="@android:color/holo_blue_dark"
                 android:id="@+id/eventdate"
                 android:textStyle="bold"
-                android:text="Date"
-                android:textSize="15dp">
+                android:text="@string/date"
+                android:textSize="15sp">
             </TextView>
 
             <TextView
@@ -35,8 +35,8 @@
                 android:textColor="@android:color/holo_purple"
                 android:id="@+id/eventname"
                 android:textStyle="bold"
-                android:text="Event"
-                android:textSize="40dp">
+                android:text="@string/event"
+                android:textSize="40sp">
             </TextView>
 
             <TextView
@@ -46,8 +46,8 @@
                 android:textColor="@android:color/holo_green_dark"
                 android:id="@+id/eventtime"
                 android:textStyle="bold"
-                android:text="00:00 AM"
-                android:textSize="15dp">
+                android:text="@string/_00_00_am"
+                android:textSize="15sp">
             </TextView>
 
             <ImageButton
@@ -57,14 +57,15 @@
                 android:layout_marginTop="10dp"
                 android:src="@drawable/ic_action_notification_off"
                 android:background="@drawable/register"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:contentDescription="@string/notification">
             </ImageButton>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/deletevent"
-                android:text="Delete"
+                android:text="@string/delete"
                 android:background="@drawable/register"
                 android:textColor="@color/white"
                 android:layout_margin="10dp">

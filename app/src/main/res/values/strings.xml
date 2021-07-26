@@ -24,4 +24,14 @@
     <string name="fri">Fri</string>
     <string name="sat">Sat</string>
     <string name="albik_s_events">albik\'s Events</string>
+    <string name="banner">banner</string>
+    <string name="august">August</string>
+    <string name="circle">circle</string>
+    <string name="_10">10</string>
+    <string name="mbrojtja_detyres">Mbrojtja detyres</string>
+    <string name="_12_00_pm">12:00 PM</string>
+    <string name="date">Date</string>
+    <string name="event">Event</string>
+    <string name="notification">Notification</string>
+    <string name="delete">Delete</string>
 </resources>

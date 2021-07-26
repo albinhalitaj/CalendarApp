@@ -10,7 +10,7 @@
         android:layout_height="741dp"
         android:layout_marginTop="-200dp"
         android:src="@mipmap/login"
-        android:contentDescription="banner">
+        android:contentDescription="@string/banner">
     </ImageView>
 
     <EditText
@@ -19,7 +19,7 @@
         android:layout_marginTop="-90dp"
         android:layout_gravity="center"
         android:background="@drawable/input"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:textColorHint="@color/blue"
         android:id="@+id/username"
         android:hint="@string/username"
@@ -34,7 +34,7 @@
         android:inputType="textPassword"
         android:hint="@string/password"
         android:textColorHint="@color/blue"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:id="@+id/password"
         android:background="@drawable/input">
     </EditText>
