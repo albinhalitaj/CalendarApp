@@ -14,4 +14,14 @@
     <string name="_1">1</string>
     <string name="event_indicator">Event Indicator</string>
     <string name="clock">Clock</string>
+    <string name="previous_button">Previous Button</string>
+    <string name="next_button">Next Button</string>
+    <string name="sun">Sun</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="albik_s_events">albik\'s Events</string>
 </resources>

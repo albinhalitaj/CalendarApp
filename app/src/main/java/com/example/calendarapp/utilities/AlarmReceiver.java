@@ -26,6 +26,7 @@ public class AlarmReceiver extends BroadcastReceiver {
         Intent activityIntent = new Intent(context, MainActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(context,0,activityIntent,PendingIntent.FLAG_ONE_SHOT);
 
+
         String channelId = "channel_id";
         CharSequence name = "channel_name";
         String description = "description";
@@ -44,6 +45,7 @@ public class AlarmReceiver extends BroadcastReceiver {
                 .setDeleteIntent(pendingIntent)
                 .setGroup("Group_calendar_view")
                 .build();
+
         NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(context);
         notificationManagerCompat.notify(notId,notification);
     }

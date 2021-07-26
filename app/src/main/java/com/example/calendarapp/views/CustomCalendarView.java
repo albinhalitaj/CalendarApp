@@ -10,6 +10,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.opengl.Visibility;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -43,10 +44,12 @@ import java.util.List;
 import java.util.Locale;
 import java.util.TimeZone;
 
+import static android.content.Context.ALARM_SERVICE;
+
 public class CustomCalendarView extends LinearLayout {
 
     ImageButton nextButton,previousButton;
-    TextView currentDate;
+    TextView currentDate,userEvents;
     GridView gridView;
     private static final int MAX_CALENDAR_DAYS = 42;
     Calendar calendar = Calendar.getInstance(Locale.ENGLISH);
@@ -80,6 +83,7 @@ public class CustomCalendarView extends LinearLayout {
         InitializeLayout();
         SetUpCalendar();
         DisplayAllEvents();
+        ShowUserEvents();
 
         previousButton.setOnClickListener(v -> {
             calendar.add(Calendar.MONTH,-1);
@@ -135,7 +139,7 @@ public class CustomCalendarView extends LinearLayout {
                 if (alarmMe.isChecked()) {
                     SaveEvent(eventName.getText().toString(),eventTime.getText().toString(),date,month,year,"on");
                     Calendar calendar = Calendar.getInstance();
-                    calendar.set(alarmYear,alarmMonth,alarmDay,alarmHour,alarmMinute);
+                    calendar.set(alarmYear,alarmMonth,alarmDay,alarmHour,alarmMinute,0);
                     setAlarm(calendar,eventName.getText().toString(),eventTime.getText().toString(),
                             getRequestCode(date,eventName.getText().toString(),eventTime.getText().toString()));
                 } else {
@@ -143,6 +147,7 @@ public class CustomCalendarView extends LinearLayout {
                 }
                 SetUpCalendar();
                 DisplayAllEvents();
+                ShowUserEvents();
                 alertDialog.dismiss();
             });
             builder.setView(addView);
@@ -176,10 +181,11 @@ public class CustomCalendarView extends LinearLayout {
             alertDialog.setOnCancelListener(dialog -> {
                 SetUpCalendar();
                 DisplayAllEvents();
+                ShowUserEvents();
             });
-
             return true;
         });
+
     }
 
     public CustomCalendarView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
@@ -217,6 +223,7 @@ public class CustomCalendarView extends LinearLayout {
         previousButton = view.findViewById(R.id.previousBtn);
         currentDate = view.findViewById(R.id.currentDate);
         gridView = view.findViewById(R.id.gridview);
+        userEvents = view.findViewById(R.id.userEvents);
     }
 
     private void SetUpCalendar() {
@@ -311,5 +318,13 @@ public class CustomCalendarView extends LinearLayout {
         }
         cursor.close();
         dbOpenHelper.close();
+    }
+
+    private void ShowUserEvents(){
+        if (eventsList.size() <= 0){
+            userEvents.setVisibility(GONE);
+        }else{
+            userEvents.setVisibility(VISIBLE);
+        }
     }
 }

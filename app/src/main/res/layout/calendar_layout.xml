@@ -19,10 +19,11 @@
             android:id="@+id/previousBtn"
             android:background="@mipmap/back_64px"
             android:layout_margin="10dp"
+            android:contentDescription="@string/previous_button"
             />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/currentDate"
             android:gravity="center"
@@ -41,6 +42,7 @@
             android:id="@+id/nextBtn"
             android:background="@mipmap/forward_64px"
             android:layout_margin="10dp"
+            android:contentDescription="@string/next_button"
             />
 
     </LinearLayout>
@@ -56,7 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Sun"
+            android:text="@string/sun"
             android:layout_marginTop="4dp"
             android:layout_weight="1"
             android:textStyle="bold">
@@ -65,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Mon"
+            android:text="@string/mon"
             android:layout_marginTop="4dp"
             android:layout_weight="1"
             android:textStyle="bold">
@@ -74,7 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Tue"
+            android:text="@string/tue"
             android:layout_marginTop="4dp"
             android:layout_weight="1"
             android:textStyle="bold">
@@ -83,7 +85,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Wed"
+            android:text="@string/wed"
             android:layout_marginTop="4dp"
             android:layout_weight="1"
             android:textStyle="bold">
@@ -92,7 +94,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Thu"
+            android:text="@string/thu"
             android:layout_marginTop="4dp"
             android:layout_weight="1"
             android:textStyle="bold">
@@ -101,7 +103,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Fri"
+            android:text="@string/fri"
             android:layout_marginTop="4dp"
             android:layout_weight="1"
             android:textStyle="bold">
@@ -110,7 +112,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Sat"
+            android:text="@string/sat"
             android:layout_marginTop="4dp"
             android:layout_weight="1"
             android:textStyle="bold">
@@ -126,12 +128,22 @@
         android:stretchMode="columnWidth">
     </GridView>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:text="@string/albik_s_events"
+        android:id="@+id/userEvents"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/light_blue">
+    </TextView>
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/allEventsRv"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="10dp">
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp">
     </androidx.recyclerview.widget.RecyclerView>
 
 

@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.opengl.Visibility;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -150,11 +151,7 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
         Cursor cursor = dbOpenHelper.ReadIDEvents(date,event,time,database);
         while (cursor.moveToNext()){
             String notify = cursor.getString(cursor.getColumnIndex(DbStructure.NOTIFY));
-            if (notify.equals("on")){
-                alarmed = true;
-            }else {
-                alarmed = false;
-            }
+            alarmed = notify.equals("on");
         }
         cursor.close();
         dbOpenHelper.close();
